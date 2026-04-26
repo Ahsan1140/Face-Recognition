@@ -1,10 +1,10 @@
-# 📸 Face Recognition Attendance System
+# Face Recognition Attendance System
 
 A simple real-time face recognition attendance system using Python, OpenCV, and the `face_recognition` library. This project captures video from a webcam, identifies known faces, and logs attendance into an Excel file.
 
 ---
 
-## 🚀 Features
+## Features
 
 - Real-time face detection and recognition
 - Automatic attendance recording
@@ -14,24 +14,29 @@ A simple real-time face recognition attendance system using Python, OpenCV, and 
 
 ---
 
-## 🛠️ Requirements
+## Requirements
 
 Install the required dependencies:
-
+```bash 
 pip install opencv-python face-recognition numpy pandas openpyxl
-
+```
 ---
 
-## 📂 Project Structure
+## Project Structure
 
-.
-├── main.py              # Main program  
-├── encodings.pickle     # Saved face encodings  
-├── kehadiran.xlsx       # Attendance file (auto-generated)  
-
+```bash
+FACE-RECOGNITION/
+├── dataset/
+│   └── ahsanul.JPG
+├── dlib-19.24.1-cp311-cp311-win_amd64.whl
+├── encode_face.py
+├── encodings.pickle
+├── face_attendance.py
+├── kehadiran.xlsx
+```
 ---
 
-## ▶️ How It Works
+## How It Works
 
 1. Loads known face encodings from `encodings.pickle`
 2. Captures video from the webcam
@@ -44,7 +49,7 @@ pip install opencv-python face-recognition numpy pandas openpyxl
 
 ---
 
-## 🧠 Key Function
+## Key Function
 
 ### is_already_recorded(name)
 
@@ -52,7 +57,7 @@ Checks whether a person’s attendance has already been recorded on the current 
 
 ---
 
-## 📝 Attendance Format
+## Attendance Format
 
 The system saves attendance in `kehadiran.xlsx` with the following structure:
 
@@ -62,7 +67,7 @@ The system saves attendance in `kehadiran.xlsx` with the following structure:
 
 ---
 
-## ▶️ Running the Project
+## Running the Project
 
 python main.py
 
@@ -70,7 +75,7 @@ Press **q** to exit the application.
 
 ---
 
-## ⚠️ Notes
+## Notes
 
 - Make sure `encodings.pickle` exists and contains valid face data.
 - The Excel file will be created automatically if it does not exist.
@@ -79,7 +84,7 @@ Press **q** to exit the application.
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 - Improve matching accuracy using face distance
 - Add a graphical user interface (GUI)
@@ -89,6 +94,6 @@ Press **q** to exit the application.
 
 ---
 
-## 📄 License
+## License
 
 This project is open-source and intended for learning purposes.
